@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workshop Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Student Workshop Registration</h1>
+    <p>Register for the workshop and explore sample users.</p>
+
+    <section class="panel">
+      <h2>Registration Form</h2>
+      <form id="registrationForm" novalidate>
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" placeholder="Enter your name">
+        <p class="error" id="nameError"></p>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email">
+        <p class="error" id="emailError"></p>
+
+        <label for="age">Age</label>
+        <input type="number" id="age" placeholder="18 to 60">
+        <p class="error" id="ageError"></p>
+
+        <button type="submit">Register</button>
+      </form>
+      <p id="message" aria-live="polite"></p>
+    </section>
+
+    <section class="panel">
+      <h2>Sample Users from API</h2>
+      <button type="button" id="loadUsers">Load Sample Users</button>
+      <p id="apiMessage" aria-live="polite"></p>
+      <ul id="usersList"></ul>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
